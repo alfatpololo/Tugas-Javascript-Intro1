@@ -1,0 +1,10 @@
+let n = 5;
+let cetakSegitiga = "";
+
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= n - i + 1; j++) {
+    cetakSegitiga += j;
+  }
+  cetakSegitiga += "\n";
+}
+console.log(cetakSegitiga);
