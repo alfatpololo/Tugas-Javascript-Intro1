@@ -1,10 +1,16 @@
-let n = 5;
-let cetakSegitiga = "";
-
-for (let i = 1; i <= n; i++) {
-  for (let j = 1; j <= n - i + 1; j++) {
-    cetakSegitiga += j;
-  }
-  cetakSegitiga += "\n";
+const segitiga = (t = 5) => {
+    if(Number.isInteger(t)){
+        for(let i = t; i > 0; i--){
+            let line = ""
+            for(let j = 1; j <= i; j++){
+                line += " "
+                line += j
+            }
+            console.log(line)
+        }
+    } else {
+        console.log("Pastikan input bertipe number")
+    }
 }
-console.log(cetakSegitiga);
+
+segitiga()
